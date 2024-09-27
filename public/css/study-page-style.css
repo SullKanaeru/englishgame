@@ -1,0 +1,29 @@
+.materi {
+    width: 60vh;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0px;
+    height: 0px;
+}
+
+.submit {
+    font-size: 18px;
+    top: 58vh;
+    padding: 9px 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(118, 175, 255);
+    box-shadow: 0 7px 0 rgb(75, 117, 176);
+    transition: all 0.1s ease;
+    border: 3px solid black;
+}
+
+.submit:active {
+    transform: translateY(7px);
+    box-shadow: 0 0px 0 rgb(75, 117, 176);
+}

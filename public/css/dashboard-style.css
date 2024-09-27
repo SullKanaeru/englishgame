@@ -1,0 +1,79 @@
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-family: "Protest Guerrilla", sans-serif;
+        color: white;
+        font-size: 40px;
+    }
+
+    .cloud {
+        position: absolute;
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 70%;
+        z-index: 1;
+    }
+
+    .text-1 {
+        width: 70vw;
+        margin-bottom: 10%;
+        animation: text-animation 2s infinite ease-in-out;
+    }
+
+    @keyframes text-animation {
+        0%,
+        100% {
+            transform: rotate(2deg);
+        }
+        50% {
+            transform: rotate(-2deg);
+        }
+    }
+
+    .logo-1 {
+        width: 60vw;
+        margin: 0 0 10% 0;
+        animation: logo-animation 4s infinite ease-in-out;
+    }
+
+    @keyframes logo-animation {
+        0%,
+        100% {
+            transform: translate(-20px, 0) rotate(10deg) scale(1);
+        }
+        50% {
+            transform: translate(10px, 0) rotate(0deg) scale(1.1);
+        }
+    }
+
+    .button-group {
+        display: flex;
+        width: 100%;
+        /* background-color: black; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        z-index: 2;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0px;
+        height: 50px;
+    }
+
+    .btn:active {
+        transform: scale(1.1);
+    }
+
+    .study-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+}
